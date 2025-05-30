@@ -1,0 +1,1 @@
+API fetched by axios method hence install axios 
