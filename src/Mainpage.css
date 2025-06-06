@@ -1,54 +1,56 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
+/* Mainpage.css */
 
+/* Override Bootstrap container background to white and add subtle shadow */
 .container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background: white;
+  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Headings */
 h1 {
-  color: #333;
+  font-weight: 700;
+  color: #2c3e50;
 }
 
-.converter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Buttons */
+.btn-success {
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
 }
 
-.input-field {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.btn-success:hover:not(:disabled) {
+  background-color: #1e7e34;
 }
 
-.convert-button {
-  padding: 10px 20px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+/* Alert for results */
+.alert-info {
+  background-color: #e9f7ef;
+  border-color: #c3e6cb;
+  color: #155724;
+  font-weight: 600;
 }
 
-.convert-button:hover {
-  background-color: #218838;
+/* Input & Select */
+.form-control, .form-select {
+  font-size: 1rem;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s ease;
 }
 
-.result {
-  margin-top: 20px;
-  font-size: 1.5em;
-  color: #333;
+.form-control:focus, .form-select:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 6px #28a745aa;
+  outline: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .container {
+    margin: 20px 10px;
+    padding: 20px;
+  }
 }
